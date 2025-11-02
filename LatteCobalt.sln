@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatteCobalt", "LatteCobalt\LatteCobalt.csproj", "{4DDE407E-989F-419A-BEE1-C980352895EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CobaltTest", "CobaltTest\CobaltTest.csproj", "{A5B7FA05-88B9-4CD4-9EBA-F2EE4045E9AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latte", "..\Latte\Latte\Latte.csproj", "{F7386848-9F58-424A-B597-D3B3DDA2A0B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DDE407E-989F-419A-BEE1-C980352895EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDE407E-989F-419A-BEE1-C980352895EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDE407E-989F-419A-BEE1-C980352895EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDE407E-989F-419A-BEE1-C980352895EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B7FA05-88B9-4CD4-9EBA-F2EE4045E9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B7FA05-88B9-4CD4-9EBA-F2EE4045E9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B7FA05-88B9-4CD4-9EBA-F2EE4045E9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B7FA05-88B9-4CD4-9EBA-F2EE4045E9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7386848-9F58-424A-B597-D3B3DDA2A0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7386848-9F58-424A-B597-D3B3DDA2A0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7386848-9F58-424A-B597-D3B3DDA2A0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7386848-9F58-424A-B597-D3B3DDA2A0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
