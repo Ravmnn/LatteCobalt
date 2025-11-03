@@ -16,7 +16,7 @@ class Program
         {
             ContextSettings = AppInitializationSettings.DefaultContextSettings with
             {
-                AntialiasingLevel = 8
+                AntialiasingLevel = 4
             }
         };
 

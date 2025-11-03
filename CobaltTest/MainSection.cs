@@ -1,4 +1,6 @@
+using Latte.UI.Elements;
 using Latte.Application;
+
 using Latte.Cobalt.Widgets;
 
 
@@ -11,6 +13,16 @@ public sealed class MainSection : Section
 {
     public MainSection()
     {
-        AddElement(new ButtonWidget(null, null, "button"));
+        var layout = new HorizontalLayoutElement(null, null)
+        {
+            Margin = 5f
+        };
+
+        var button = new ButtonWidget(null, null, "button");
+        var checkBox = new CheckBoxWidget(null, null);
+        layout.Push(button);
+        layout.Push(checkBox);
+
+        AddElements(layout, button, checkBox);
     }
 }

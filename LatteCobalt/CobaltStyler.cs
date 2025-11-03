@@ -25,4 +25,39 @@ public static class CobaltStyler
     {
         element.Color = CobaltStyle.PressedColor;
     }
+
+
+    public static void StylizeActive(this ShapeElement element)
+    {
+        element.Color = CobaltStyle.ActiveColor;
+    }
+
+
+
+
+    public static void StylizeActiveNormal(this ShapeElement element, bool active)
+    {
+        if (active)
+            element.Color = CobaltStyle.ActiveColor;
+        else
+            element.StylizeNormal();
+    }
+
+
+    public static void StylizeActiveHovered(this ShapeElement element, bool active)
+    {
+        if (active)
+            element.Color = CobaltStyle.ActiveHoveredColor;
+        else
+            element.StylizeHovered();
+    }
+
+
+    public static void StylizeActivePressed(this ShapeElement element, bool active)
+    {
+        if (active)
+            element.Color = CobaltStyle.ActivePressedColor;
+        else
+            element.StylizePressed();
+    }
 }

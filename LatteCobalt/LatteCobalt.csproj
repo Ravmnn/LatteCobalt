@@ -11,4 +11,8 @@
       <ProjectReference Include="..\..\Latte\Latte\Latte.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <EmbeddedResource Include="Resources/**/*" />
+    </ItemGroup>
+
 </Project>

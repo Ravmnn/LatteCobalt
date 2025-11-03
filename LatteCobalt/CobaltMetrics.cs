@@ -12,6 +12,7 @@ public static class CobaltMetrics
     public const float RectangleBorderSize = 1.5f;
 
     public static readonly Vec2f ButtonSize = new Vec2f(100, 27f);
+    public static readonly Vec2f CheckBoxSize = new Vec2f(20, 20);
 
     public const uint TextSize = 16;
 }
