@@ -13,7 +13,7 @@ public class ButtonWidget : ButtonElement
         : base(parent, position, CobaltMetrics.ButtonSize, null)
     {
         Radius = CobaltMetrics.RectangleRadius;
-        BorderSize = CobaltMetrics.RectangleBorderSize;
+        BorderSize = CobaltMetrics.BorderSize;
 
         this.StylizeNormal();
 

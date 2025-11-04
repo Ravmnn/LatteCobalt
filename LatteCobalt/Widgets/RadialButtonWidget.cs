@@ -1,5 +1,6 @@
+using System.Collections.Generic;
+
 using Latte.Core.Type;
-using Latte.UI;
 using Latte.UI.Elements;
 
 
@@ -8,18 +9,18 @@ namespace Latte.Cobalt.Widgets;
 
 
 
-public class CheckBoxIndicatorWidget : SpriteElement
+public class RadialButtonSelectedIndicatorWidget : CircleElement
 {
-    public new CheckBoxWidget Parent => (base.Parent as CheckBoxWidget)!;
+    public new RadialButtonWidget Parent => (base.Parent as RadialButtonWidget)!;
 
 
 
 
-    public CheckBoxIndicatorWidget(CheckBoxElement parent)
-        : base(parent, CobaltEmbeddedResources.CheckBoxMark(), null, new Vec2f())
+    public RadialButtonSelectedIndicatorWidget(RadialButtonWidget parent)
+        : base(parent, null, 0f)
     {
-        SizePolicy = SizePolicy.FitParent;
-        SizePolicyMargin = new Vec2f(0.4f, 0.4f);
+        Radius = CobaltMetrics.RadialButtonSelectedIndicatorRadius;
+        Color = CobaltStyle.RadialButtonSelectedIndicatorColor;
     }
 
 
@@ -34,19 +35,17 @@ public class CheckBoxIndicatorWidget : SpriteElement
 
 
 
-public class CheckBoxWidget : CheckBoxElement
+public class RadialButtonWidget : RadialButtonElement
 {
-    public CheckBoxWidget(Element? parent, Vec2f? position, bool selected = false)
-        : base(parent, position, selected)
+    public RadialButtonWidget(Element? parent, Vec2f? position, params IEnumerable<RadialButtonElement> chain)
+        : base(parent, position, CobaltMetrics.RadialButtonRadius, chain)
     {
-        Radius = CobaltMetrics.RectangleRadius;
         BorderSize = CobaltMetrics.BorderSize;
-        Size = CobaltMetrics.CheckBoxSize;
 
         this.StylizeActiveNormal(Selected);
 
 
-        SelectedIndicator = new CheckBoxIndicatorWidget(this);
+        SelectedIndicator = new RadialButtonSelectedIndicatorWidget(this);
     }
 
 
