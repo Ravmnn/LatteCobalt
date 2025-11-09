@@ -17,7 +17,7 @@ public class RadialButtonSelectedIndicatorWidget : CircleElement
 
 
     public RadialButtonSelectedIndicatorWidget(RadialButtonWidget parent)
-        : base(parent, null, 0f)
+        : base(parent, null, 1f)
     {
         Radius = CobaltMetrics.RadialButtonSelectedIndicatorRadius;
         Color = CobaltStyle.RadialButtonSelectedIndicatorColor;

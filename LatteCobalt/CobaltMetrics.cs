@@ -13,7 +13,7 @@ public static class CobaltMetrics
     public const float RectangleRadius = 4f;
 
     public const float RadialButtonRadius = 10f;
-    public const float RadialButtonSelectedIndicatorRadius = RadialButtonRadius - 3f;
+    public const float RadialButtonSelectedIndicatorRadius = RadialButtonRadius - 2f;
 
 
     public static readonly Vec2f ButtonSize = new Vec2f(100, 27f);
